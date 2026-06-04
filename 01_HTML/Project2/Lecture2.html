@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 2 — HTML Basics</title>
+</head>
+<body>
+  <header>
+    <h1>Lecture 2</h1>
+    <h2>HTML Basics: Tags, Elements & Document Structure</h2>
+  </header>
+
+  <nav>
+    <a href="index.html">◀ Index</a> |
+    <a href="lecture1.html">◀ Prev</a> |
+    <a href="lecture3.html">Next ▶</a>
+  </nav>
+
+  <article>
+    <h3>Key Concepts</h3>
+    <ul>
+      <li><strong>HTML document:</strong> starts with <code>&lt;!doctype html&gt;</code> and has <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>.</li>
+      <li><strong>Elements:</strong> start tag, content, end tag (e.g., <code>&lt;p&gt;Hello&lt;/p&gt;</code>).</li>
+      <li><strong>Void elements:</strong> elements without end tags (e.g., <code>&lt;br&gt;</code>, <code>&lt;img&gt;</code>).</li>
+      <li><strong>Attributes:</strong> provide extra info (e.g., <code>src</code>, <code>alt</code>, <code>href</code>, <code>id</code>, <code>class</code> — although class used here only as attribute, no CSS).</li>
+    </ul>
+
+    <h3>Common Structural Tags</h3>
+    <ul>
+      <li><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>.</li>
+      <li><code>&lt;h1&gt;..&lt;h6&gt;</code> for headings.</li>
+      <li><code>&lt;p&gt;</code> for paragraphs, <code>&lt;hr&gt;</code> for separators.</li>
+    </ul>
+
+    <h3>Example: minimal HTML page</h3>
+    <pre>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+    <h3>Practice Tasks</h3>
+    <ol>
+      <li>Create a page with 3 headings and 2 paragraphs. Save and open in a browser.</li>
+      <li>Try adding an image with <code>&lt;img src="..." alt="..."&gt;</code> (use local file or URL).</li>
+    </ol>
+  </article>
+
+  <footer>
+    <p>Back to <a href="index.html">Index</a>.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.container {
+  height: 400px;
+  width: 400px;
+  background-color: teal;
+  font-size: 40px;
+}
+
+
+
+@media screen and (min-width: 600px) {
+  .container {
+    background-color: rgb(134, 205, 90);
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    background-color: rgb(75, 219, 235);
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,153 @@
+<!--
+    Multimedia tags are HTML tags that are used to embed multimedia content such as images, videos, and audio files in a web page. 
+    These tags allow developers to add interactive and engaging elements to a website. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MultiMedia Tags</title>
+  </head>
+  <body style="display: flex; flex-direction: column">
+    <h1>MultiMedia Tags</h1>
+
+<!--
+Types :
+
+1. Image Tag :
+The <img> tag is an HTML element used to embed images in a web page. It is a self-closing tag, meaning it does not require a closing tag. 
+The <img> tag has several attributes that define how the image should be displayed, including the src attribute, which specifies 
+the URL of the image, the alt attribute, which provides alternative text for the image, and the width and height attributes, 
+which specify the dimensions of the image.
+
+The syntax for the img tag is as follows:
+
+<img src="image_url" alt="alternative_text" width="width_pixels" height="height_pixels">
+
+src (required) specifies the URL of the image to be displayed.
+alt (required) provides an alternative text description of the image for users who are visually impaired or 
+who have images disabled in their browser.
+width (optional) specifies the width of the image in pixels.
+height (optional) specifies the height of the image in pixels.
+
+Note : It is an self closing tag.
+
+-->
+    <img
+      src="data:image/jpeg;base64,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"
+      alt="no_image" width="200px" height="200px"
+    />
+
+    <img src="./assets/1.jpg" alt="no_img" width="200px" height="200px" />
+
+    <!--
+2. Video Tag :
+The <video> tag is an HTML5 element used to embed videos into a webpage. 
+It allows the browser to display a video file natively, without requiring a third-party plugin. 
+The <video> tag supports various video formats such as MP4, WebM, and Ogg.
+
+The controls and autoplay attributes are used in the video tag to enable video control buttons and automatic playback, respectively.
+
+a) The controls attribute adds a set of playback controls to the video player, such as play, pause, seek, and volume controls. 
+It can be added as follows:
+
+<video poster="image.jpg" controls>
+<source src="video.mp4" type="video/mp4">
+
+</video>
+In this syntax, the poster attribute is used to specify an image that will be displayed before the video starts playing.
+
+b) The autoplay attribute, on the other hand, tells the browser to start playing the video automatically as soon as it is loaded. 
+It can be added as follows:
+
+<video src="video.mp4" autoplay></video>
+-->
+    <video width="200px" height="200px" controls loop>
+      <source src="./assets/samplevideo.mp4" type="video/mp4" />
+      Your browser does not support this video
+    </video>
+    <!--
+3. Audio Tag :
+The audio tag in HTML is used to embed audio files directly on a webpage. It allows developers to add audio files in various formats 
+such as MP3, WAV, and OGG to their web pages. The audio tag supports the use of controls such as play, pause, and volume adjustment, 
+which can be added using attributes such as autoplay, controls, and loop. The audio tag can also be used in conjunction with JavaScript 
+to create interactive audio players and custom audio controls.
+
+The syntax for the audio tag is:
+
+<audio src="audio_file.mp3" controls></audio>
+
+The src attribute specifies the URL of the audio file to be played, and the controls attribute displays the built-in controls 
+for the user to play, pause, and adjust the volume of the audio. Additional attributes can also be added to the audio tag for 
+customization purposes.
+-->
+    <audio width="200px" height="200px" controls>
+      <source src="./assets/sampleaudio.mp3" type="audio/mp3" />
+    </audio>
+
+    <!--
+4. Object Tag :
+
+The <object> tag in HTML is used to embed an external resource into a web page, such as an image, video, audio, PDF, or Flash animation. 
+The resources are usually multimedia files or plugins for web browsers. The <object> tag contains several attributes, including data, 
+type, width, height, and classid, which are used to specify the source and display properties of the object.
+
+The syntax for the object tag:
+
+<object data="url" type="mime/type">
+  
+</object>
+The data attribute specifies the URL of the resource to be embedded, and the type attribute specifies the MIME type of the resource.
+
+Inside the object tag, you can include any kind of fallback content in case the media file cannot be loaded or displayed. 
+For example, you can include text or an image that describes the content of the media file.
+
+-->
+
+    <object
+      data="./assets/sampledoc.pdf"
+      type="application/pdf"
+      width="400px"
+      height="400px"
+    ></object>
+
+    <!--
+5. Embedded Tag :
+
+The <iframe> tag is an example of an embedded tag in HTML. It is used to embed a webpage or a portion of a webpage into 
+another HTML document. The src attribute specifies the URL of the webpage to be embedded. Other attributes such as width, height, 
+scrolling, and frameborder can be used to customize the appearance and behavior of the embedded content . 
+The <iframe> tag is commonly used for displaying content from other websites, embedding videos or maps, and creating a layout 
+for a webpage that includes multiple sections. 
+
+The syntax for the <iframe> tag is:
+
+<iframe src="url" width="value" height="value"></iframe>
+The src attribute specifies the URL of the document to be embedded.
+The width attribute specifies the width of the embedded document.
+The height attribute specifies the height of the embedded document.
+Steps for embedding a YouTube video using an iframe:
+
+Go to the YouTube website and find the video you want to embed.
+Click on the "Share" button located beneath the video.
+Click on the "Embed" button in the share menu.
+Choose the video size and other customization options you prefer.
+Copy the iframe code generated by YouTube.
+Open your HTML document in a text editor.
+Paste the copied iframe code into the section of your HTML document where you want the video to appear.
+Save your HTML document and open it in a web browser to test the video playback.
+-->
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/qmZve6mnJSI?si=hJrLn7cZ29Y7ogEZ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!-- 
+The <form> tag is used to create a container for collecting and submitting data from user input on a web page. 
+It is used to define a section of a web page that contains input fields, buttons, and other form elements, 
+which allow users to enter and submit data to a web server.
+
+The <form> element has several attributes that can be used to specify how the form should behave, 
+such as action, method, enctype, and target. Here's a brief overview of these attributes:
+
+action: This attribute specifies the URL where the form data should be submitted when the form is submitted. 
+It can be a relative or absolute URL, or a JavaScript function to handle form submission.
+
+method: This attribute specifies the HTTP method to be used for submitting the form data. 
+It can be either "GET" or "POST". "GET" method appends the form data to the URL as query parameters, 
+while "POST" method sends the form data in the request body.
+
+enctype: This attribute specifies the encoding type for the form data when it is submitted. 
+It is used with the method attribute set to "POST". Common values include "application/x-www-form-urlencoded" for URL-encoded form data 
+and "multipart/form-data" for binary or large form data.
+
+target: This attribute specifies where the form response should be displayed after form submission. 
+It can take values like "_self" (default), "_blank", "_parent", or "_top", or a custom target name.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/submitform" method="post" target="_self" autocomplete="off" id="myform" enctype="multipart/form-data">
+
+<!-- 
+1. <input> elements: These are used to collect user input. There are three <input> elements in this form:
+
+One with type="text" and name="email": This is a text input field where users can enter their email address.
+One with type="password" and name="pwd": This is a password input field where users can enter their password.
+One with type="submit" and value="login": This is a submit button that users can click to submit the form data.
+-->
+
+        <input type="text" name="email" placeholder="Enter email" >
+        <input type="password" name="pwd" placeholder="Enter password" >
+        <input type="submit" value="login" >
+<!-- 
+2. <label>: 
+
+The <label> tag is used to associate a label with an input field in a form. 
+It is typically used to provide a text description for an input field, such as a text input, checkbox, or radio button. 
+The for attribute of the <label> tag should match the id attribute of the associated input field, so that clicking on the label 
+will focus or activate the associated input field.
+ -->
+        <label>Age</label>
+<!-- 
+3. <select> element: 
+This is a dropdown list where users can select an option. It has the name attribute set to "userage" and
+the size attribute set to "1", which means it will display one option at a time.  
+<option>: The <option> tag is used to define the individual options within the <select> tag. 
+ -->
+        <select name="userAge" id="age" size="1">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+        </select>
+        <!-- Since user can himself inc the size of this textarea we can use maxheight and maxwidth to avoid this -->
+        <p>
+<!-- 
+4. <textarea> element: 
+This is a multi-line text input field where users can enter a longer message. 
+It has the name attribute set to "message" and the rows and cols attributes set to control the size of the textarea. 
+-->
+            <textarea name="message" rows="10" cols="30" style="max-width: 100px; max-height: 100px;">Description </textarea>
+       
+<!-- 
+5. <button> element: 
+This is a button that users can click. It has the type attribute set to "button" and an onclick attribute that 
+specifies a JavaScript function to be executed when the button is clicked. In this case, it displays an alert with the message "hey there".
+ -->
+        <button type="button" onclick="alert('hey there')">click me</button>
+<!-- 
+6. <fieldset> element: 
+This is used to group related form elements together. It has a <legend> element inside that specifies a caption for the fieldset, 
+which in this case is "Login". Inside the fieldset, there are two <input> elements:
+
+One with type="text" and name="email": This is a text input field where users can enter their email address. 
+It also has a list attribute that references a <datalist> element with the id "myname", which provides suggestions for the input field.
+One with type="password" and name="pwd": This is a password input field where users can enter their password.
+There is also an <input> element with type="submit", which is a submit button that users can click to submit the form data. 
+It has additional attributes formaction="/someotherpath", and formenctype="multipart/form-data". 
+These attributes override the form-level action, method, and enctype attributes for this specific submit button. 
+When this submit button is clicked, the form data will be submitted to the URL specified in the formaction attribute, 
+using the encoding type specified in the formenctype attribute, and the HTTP method specified in the formmethod attribute.
+ -->
+        <fieldset >
+            <legend>Login Form</legend>
+            <input type="text" name="email" placeholder="Enter email" list="myname" >
+<!-- 
+7. <datalist>: The <datalist> tag is used to provide a pre-defined list of options for an input field in a form. 
+The <datalist> tag is used in conjunction with an <input> field of type "text" or "search", and 
+the list of options is defined using <option> tags within the <datalist> tag. The user can select an option from the list or 
+enter a custom value.
+ -->
+            <datalist id="myname">
+                <option value="name 1">
+                    <option value="name 2">
+                    <option value="name 3">
+            </datalist>
+            <input type="password" name="pwd" placeholder="Enter password" >
+            <input type="submit" value="login" formaction="someotherpath"
+            formenctype="multipart/form-data" formmethod="get" formtarget="_self"
+            >
+        </fieldset>
+        
+<!-- Here, since the button is now out of the form then will it work or not. so, in order to make it form use this id form="myform" -->
+    </p>
+    </form>
+    <input type="submit" value="login" form="myform" formaction="someotherpath">
+    
+</body>
+</html>

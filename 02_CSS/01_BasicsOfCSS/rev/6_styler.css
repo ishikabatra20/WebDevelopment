@@ -1,0 +1,71 @@
+
+/* Tag/ELement Selector */
+h1{
+    background-color: steelblue;
+    font-size: 30px;
+}
+
+ul{
+    background-color: turquoise;
+
+}
+/* Id Selector */
+#heading2{
+    background-color: teal;
+}
+
+#list1{
+    background-color: violet;
+}
+/* Class selector */
+.heading1{
+    color: tomato;
+}
+
+/* group selector */
+
+h2, .heading1{
+ color : blueviolet;
+ font-size: 20px;
+} 
+
+
+/* RGB colors */
+h1{
+    color: rgb(15, 113, 80);
+}
+h3{
+    background-color: hsl(110,50%, 50% , 0.6);
+}
+
+/* 
+rgb(15, 113, 80);
+rgba(15, 113. 80, 0.5);
+a-> alpha used for transparency
+- rgb(red, green, blue): Each value is a number from 0 to 255.
+- rgba(red, green, blue, alpha): The alpha value is a number from 0 (completely transparent) to 1 (completely opaque). 0.5 is 50% transparent.
+
+
+
+background-color: hsl(hue, saturation, lightness);
+
+hue- 0 to 360
+saturation- 0 to 100%, 
+lightness-0 to 100%
+
+- **Hue:** The pure color itself. This is a degree on the color wheel (0-360). 0 is red, 120 is green, 240 is blue.
+- **Saturation:** The intensity or vibrancy of the color. This is a percentage (0% to 100%). 0% is gray, 100% is the most vivid version of the color.
+- **Lightness:** The brightness of the color. This is a percentage (0% to 100%). 0% is black, 50% is the normal color, and 100% is white.
+- **The Syntax:** hsl(hue, saturation, lightness) and hsla() for transparency.
+- **Examples:**
+    - hsl(0, 100%, 50%): A fully saturated, normal lightness red.
+    - hsl(0, 100%, 25%): The same red, but darker (25% lightness).
+    - hsl(0, 50%, 50%): The same red, but less vibrant (50% saturation), making it look faded.
+    - hsla(240, 100%, 50%, 0.5): A semi-transparent pure blue.
+
+
+hexadecimal- 0 to 9 and a to f-> 16 values 
+*/
+
+
+

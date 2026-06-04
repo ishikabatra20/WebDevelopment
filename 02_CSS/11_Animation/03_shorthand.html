@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Animation</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background: red;
+      margin: 50px auto;
+
+      /* Example 1: Simple color change */
+      /* animation: changeColor 2s linear infinite; */
+
+      /* Example 2: Uncomment this and try */
+      /* animation: slideIn 3s ease-in 1s 2 reverse both; */
+
+      /* Example 3: Two animations at once */
+      animation:
+        slideIn 3s linear,
+        slideOut 3s ease-out 5s;
+    }
+
+    /* Animation 1 */
+    @keyframes changeColor {
+      from { background: red; }
+      to   { background: blue; }
+    }
+
+    /* Animation 2 */
+    @keyframes slideIn {
+      from { margin-left: 0; }
+      to   { margin-left: 200px; }
+    }
+
+    /* Animation 3 */
+    @keyframes slideOut {
+      from { margin-left: 200px; }
+      to   { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

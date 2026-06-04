@@ -1,0 +1,51 @@
+<!-- 
+The <input> tag is a commonly used HTML tag that is used to create an input field or form control on a webpage. 
+It allows users to input data, such as text, numbers, or other types of data, into a web form. 
+The <input> tag has several attributes that can be used to customize its behavior and appearance. 
+Here are some examples of how the <input> tag can be used:
+
+1. disabled: This attribute is used to disable the input field, preventing any user input. When an input field is disabled, 
+its value cannot be changed by the user.
+
+2. readonly: This attribute is used to make the input field read-only, allowing the user to view the value but not modify it. 
+Unlike disabled, a read-only input field can still be submitted with the form data.
+
+3. autocomplete: This attribute is used to specify whether the input field should have autocomplete functionality enabled or disabled. 
+It takes a boolean value, such as "on" or "off", to control whether the browser should remember and suggest previously 
+entered values for the input field.
+
+4. capture: This attribute is used with the input element of type "file" and is used to specify how the file should be captured. 
+It can take values like "user" to allow the user to choose a file from their device, "environment" to capture a media file using the 
+device's camera or microphone, or "none" to disable file capture.
+
+5. min and max: These attributes are used to set the minimum and maximum allowed values for numeric input fields, such as number, 
+range, and date. For example, min="0" and max="100" would limit the input field to accept values between 0 and 100.
+
+6. maxlength and minlength: These attributes are used to specify the maximum and minimum length of text input fields, respectively. 
+They can be used with text, search, url, tel, email, password, and textarea input types.
+
+7. placeholder: This attribute is used to provide a hint or example text that is displayed in the input field until the user enters a value. It is typically used to provide instructions or suggestions for the expected input.
+
+8. value: This attribute is used to set the initial value of the input field. It can be used with various input types to specify the 
+default value that will be displayed when the form loads.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Input 2</title>
+ </head>
+ <body>
+     <input type="text" name="username" disabled value="ABCD">
+     <input type="text" name="username2" readonly value="ABCD">
+     <input type="email" name="email" autocomplete="off" required>
+     <input type="file" name="userphoto" capture="user">
+     <input type="number" name="userage" min="10" max="30" value="15">
+     <input type="tel" name="userphone" maxlength="10" minlength="9">
+     <input type="text" name="userphone" maxlength="10" minlength="9" placeholder="Enter Something">
+     <input type="submit" value="submit">
+ </body>
+ </html>

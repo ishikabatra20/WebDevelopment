@@ -1,0 +1,48 @@
+body {
+  background: black;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+}
+
+.flag {
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+.stripe {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.top {
+  background: #ce1126;
+  height: 50px;
+  top: 0;
+}
+
+.middle {
+  background: #002868;
+  height: 100px;
+  top: 50px;
+  position: relative; 
+}
+
+.bottom {
+  background: #ce1126;
+  height: 50px;
+  bottom: 0;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;       
+  left: 100px;  
+}

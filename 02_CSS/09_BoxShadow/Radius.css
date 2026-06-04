@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* allow wrapping */
+  gap: 20px; /* add space between boxes */
+  height: 100vh;
+}
+
+.container {
+  height: 200px;
+  width: 200px;
+  background-color: orange;
+  margin: 20px;
+
+  /* 5px- blur raius */
+  /* box-shadow: 20px 20px 5px blue; */
+
+  /* 10px spread radius */
+  /* box-shadow: 0px 0px 0px 10px blue; */
+
+  /* box-shadow: 20px 20px 2px 30px blue; */
+  /* offset x | offset y| blur radius | spread radius */
+
+
+  /* inset value */
+  /* box-shadow: 10px 10px blue; */
+
+  box-shadow: inset 10px 10px blue;
+}
+/* spread and blur radius */
+.container1{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    box-shadow: 0px 0px 10px 20px blue;
+
+    
+}

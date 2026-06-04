@@ -1,0 +1,119 @@
+<!-- 
+The <input> tag is a commonly used HTML tag that is used to create an input field or form control on a webpage. 
+It allows users to input data, such as text, numbers, or other types of data, into a web form. 
+The <input> tag has several attributes that can be used to customize its behavior and appearance. 
+Here are some examples of how the <input> tag can be used:
+
+1. <input type="text">: This type of input element creates a text input field that allows users to enter text data. 
+It can be used for various purposes such as collecting names, addresses, and other textual information.
+
+2. <input type="submit">: This type of input element creates a submit button that is used to submit the form data to the 
+server for processing. When clicked, it triggers the form's submit action.
+
+3. <input type="password">: This type of input element creates a password input field that allows users to enter sensitive information, 
+such as passwords or other confidential data. The input is typically masked with asterisks or dots for security reasons.
+
+4. <input type="radio">: This type of input element creates a radio button that allows users to select a single option from a group of 
+options. Radio buttons are typically used for mutually exclusive options, where only one option can be selected at a time.
+
+5. <input type="checkbox">: This type of input element creates a checkbox that allows users to select one or more options from a 
+group of options. Checkboxes are typically used for options that can be selected independently and multiple options can be selected 
+simultaneously.
+
+6. <input type="button">: This type of input element creates a button that can be used to trigger JavaScript functions or perform 
+custom actions on a web page. It does not submit form data to the server by default.
+
+7. <input type="color">: This type of input element creates a color picker control that allows users to select a color from a color palette.
+
+8. <input type="date">: This type of input element creates a date picker control that allows users to select a date from a calendar.
+
+9. <input type="file">: This type of input element creates a file input control that allows users to select and upload files from their 
+local computer.
+
+10. <input type="month">: This type of input element creates a month picker control that allows users to select a month and year.
+
+11. <input type="time">: This type of input element creates a time picker control that allows users to select a time.
+
+12. <input type="datetime-local">: This type of input element creates a datetime picker control that allows users to select a date 
+and time in the local time zone.
+
+13. <input type="week">: This type of input element creates a week picker control that allows users to select a week of the year.
+
+14. <input type="number">: This type of input element creates a numeric input field that allows users to enter numeric values. 
+It may also include optional attributes such as min and max to specify the minimum and maximum values that can be entered.
+
+15. <input type="range">: This type of input element creates a slider control that allows users to select a value 
+within a specified range.
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input types</title>
+  </head>
+  <body>
+    <form>
+      <label for="fname">First Name</label>&nbsp;&nbsp;
+      <input type="text" name="fname" />
+      <br /><br />
+      <label for="lname">Last Name</label>&nbsp;&nbsp;
+      <input type="text" name="lname" />
+      <br /><br />
+      <label for="pwd">Password</label>&nbsp;&nbsp;
+      <input type="password" name="pwd" />
+      <br /><br />
+      <p>Choose your gender</p>
+      <input type="radio" name="gender" value="male" />
+      <label for="male">Male</label> &nbsp;&nbsp;
+      <input type="radio" name="gender" value="female" />
+      <label for="female">Female</label>
+
+      <p>Choose your interests</p>
+      <input type="checkbox" name="interests" value="reading" />
+      <label for="reading">Reading</label> &nbsp;&nbsp;
+      <input type="checkbox" name="interests" value="swimming" />
+      <label for="swimming">Swimming</label>
+      <input type="checkbox" name="interests" value="writing" />
+      <label for="writing">Writing</label>
+
+      <p>Enter your dob</p>
+      <input
+        type="date"
+        name="dob"
+        value="dob"
+        max="2023-11-10"
+        min="2023-10-10"
+        value="2023-10-22"
+      />
+
+      <p>Upload doc</p>
+      <input type="file" accept="/image* .pdf" />
+      <br /><br />
+      <input type="button" value="Click Me" onclick="alert(2+2)" />
+      <br /><br />
+      <input type="color" name="bgcolor" value="#fffff" />
+      <br /><br />
+      <p>Date-Time</p>
+      <input type="datetime-local" name="date-time" />
+      <p>Month</p>
+      <input type="month" name="month" />
+      <p>Week</p>
+      <input type="week" name="week" />
+      <p>Time</p>
+      <input type="time" name="time" />
+      <p>Number</p>
+      <input type="number" name="number" value="10" min="4" max="20" step="3" />
+      <label>Select Your Age</label>
+      <input type="range" min="0" max="120" value="20" step="1" />
+      <br /><br />
+
+      <br /><br /><br /><br />
+      <input type="submit" value="Signup" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>

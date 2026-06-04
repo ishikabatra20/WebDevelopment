@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lecture 5 — Semantic HTML & Accessibility</title>
+</head>
+<body>
+  <header>
+    <h1>Lecture 5</h1>
+    <h2>Semantic HTML & Accessibility</h2>
+  </header>
+
+  <nav>
+    <a href="index.html">◀ Index</a> |
+    <a href="lecture4.html">◀ Prev</a> |
+    <a href="lecture6.html">Next ▶</a>
+  </nav>
+
+  <article>
+    <h3>Why Semantic HTML?</h3>
+    <p>Semantic tags give meaning to content. They improve accessibility, SEO, and code readability.</p>
+
+    <h3>Common Semantic Elements</h3>
+    <ul>
+      <li><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code>.</li>
+      <li>Use <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> for images with captions.</li>
+    </ul>
+
+    <h3>Accessibility Basics</h3>
+    <ul>
+      <li>Always provide <code>alt</code> for images.</li>
+      <li>Use <code>&lt;label&gt;</code> for form fields and connect with <code>for</code> attribute when using <code>id</code>.</li>
+      <li>Provide logical document order and heading structure for screen readers.</li>
+      <li>Use <code>aria-*</code> attributes only when semantic HTML cannot express the meaning.</li>
+    </ul>
+
+    <h3>Example: Accessible form snippet</h3>
+    <pre>&lt;form&gt;
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input id="email" name="email" type="email"&gt;&lt;br&gt;
+  &lt;label&gt;&lt;input type="checkbox" name="subscribe"&gt; Subscribe to updates&lt;/label&gt;
+&lt;/form&gt;
+</pre>
+
+    <h3>Practice Tasks</h3>
+    <ol>
+      <li>Convert a non-semantic page that uses many &lt;div&gt;s into semantic tags.</li>
+      <li>Add accessible labels and alt text to an existing form and image list.</li>
+    </ol>
+  </article>
+
+  <footer>
+    <p>Back to <a href="index.html">Index</a>.</p>
+  </footer>
+</body>
+</html>

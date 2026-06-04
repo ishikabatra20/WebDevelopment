@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Elements</title>
+  </head>
+  <body style="display: flex; flex-direction: column">
+    <img src="./assets/1.jpg" alt="no image" width="200px" height="200px" loading="lazy"/>
+    <img src="./assets/2.PNG" alt="no image" width="200px" height="200px" loading="lazy"/>
+    <img src="./assets/3.jpg" alt="no image" width="200px" height="200px" loading="lazy"/>
+    <img src="./assets/4.webp" alt="no image" width="200px" height="200px" loading="lazy"/>
+    <img src="./assets/5.png" alt="no image" width="200px" height="200px" loading="lazy"/>
+    <img src="./assets/6.png" alt="no image" width="200px" height="200px" loading="lazy"/>
+    <img src="./assets/7.webp" alt="no image" width="200px" height="200px" loading="lazy"/>
+    <img src="./assets/1.jpg" alt="no image" width="200px" height="200px" loading="lazy"/>
+
+    <img src="./assets/1.jpg" alt="no image" width="200px" height="200px" loading="eager"/>
+    <img src="./assets/2.PNG" alt="no image" width="200px" height="200px" loading="eager"/>
+    <img src="./assets/3.jpg" alt="no image" width="200px" height="200px" loading="eager"/>
+    <img src="./assets/4.webp" alt="no image" width="200px" height="200px" loading="eager"/>
+    <img src="./assets/5.png" alt="no image" width="200px" height="200px" loading="eager"/>
+    <img src="./assets/6.png" alt="no image" width="200px" height="200px" loading="eager"/>
+    <img src="./assets/7.webp" alt="no image" width="200px" height="200px" loading="eager"/>
+    <img src="./assets/1.jpg" alt="no image" width="200px" height="200px" loading="eager"/>
+  </body>
+</html>
+
+<!-- 
+
+The syntax for the img tag is as follows:
+
+<img src="image_url" alt="alternative_text" width="width_pixels" height="height_pixels">
+Attributes :
+1. Source : src (required) specifies the URL of the image to be displayed.
+
+2. Alternative Text : alt (required) provides an alternative text description of the image for users who are visually 
+impaired or who have images disabled in their browser.
+
+3. Width : width (optional) specifies the width of the image in pixels.
+
+4. Height : height (optional) specifies the height of the image in pixels.
+
+5. Loading : The loading attribute in the <img> tag is used to control how the browser loads and 
+displays images on a web page. It is a new attribute introduced in HTML5 and is used to optimize the loading and 
+rendering of images to improve web page performance.The loading attribute can have three possible values:
+
+auto : This is the default value, and it tells the browser to load the image as soon as possible.
+lazy : This tells the browser to delay loading the image until it is about to come into the viewport or the visible area of the web page.
+ This can help reduce the initial load time of the page and improve performance, especially for images that 
+ are located below the fold or not immediately visible to the user.
+eager : This tells the browser to load the image immediately, even if it is not currently visible in the viewport. 
+This can be useful for images that are critical to the content or layout of the page and need to be loaded and displayed as soon as possible.
+
+Note : It is an self closing tag.
+
+
+ -->

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Models</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Hello Programmers</h1>
+    <h2>Join me on my journey</h2>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam veniam qui quo temporibus amet! Sequi, deleniti voluptatibus, officiis dignissimos sed minima pariatur recusandae qui minus ipsum alias impedit maxime animi ex? Quasi est ad fugit sed rem architecto saepe fugiat iusto quas facere libero deleniti corrupti odit, modi voluptas et?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quibusdam aliquam provident optio at maiores tenetur cupiditate tempora natus unde!</p>
+</body>
+</html>
+
+
+<!-- 
+The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. 
+It is used to create the design and layout of web pages. It can be used as a toolkit for customizing the layout of different elements. 
+The web browser renders every element as a rectangular box according to the CSS box model. Box-Model has multiple properties in CSS. 
+Some of them are given below: 
+
+content: This property is used to displays the text, images, etc, that can be sized using the width & height property.
+padding: This property is used to create space around the element, inside any defined border.
+border: This property is used to cover the content & any padding, & also allows to set the style, color, and width of the border.
+margin: This property is used to create space around the element ie., around the border area. 
+
+Content Area: This area consists of content like text, images, or other media content. It is bounded by the content edge and its 
+dimensions are given by content-box width and height.
+Padding Area: It includes the element’s padding. This area is actually the space around the content area and within the border-box. 
+Its dimensions are given by the width of the padding-box and the height of the padding-box.
+Border Area: It is the area between the box’s padding and margin. Its dimensions are given by the width and height of the border.
+Margin Area: This area consists of space between border and margin. The dimensions of the Margin area are the margin-box width and the 
+margin-box height. It is useful to separate the element from its neighbors.
+
+-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Models</title>
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        background-color:turquoise;
+        width: 200px;
+        height: 100px;
+        padding: 20px 10px;
+        border: 4px solid violet;
+        margin: 40px 40px 30px 30px;
+       
+    }
+  </style>
+  <body>
+    <div class="box">
+      <p>Some Text</p>
+    </div>
+  </body>
+</html> -->
+
+
+
+<!-- 
+For setting the width & height property of an element(for properly rendering the content in the browser), we need to 
+understand the working of the CSS Box model.
+
+While setting the width and height properties of an element with CSS, we have only set the width and height of the content area. 
+We need to add padding, borders, and margins in order to calculate the full size of an element. Consider the below example.
+
+p {
+ width: 80px;
+ height: 70px;
+ margin: 0;
+ border: 2px solid black;
+ padding: 5px;
+}
+
+
+The total width for the element can be calculated as:
+
+Total element width = width + left padding + right padding + left border + right border + left margin + right margin
+
+The <p> element can have a total width of 94px.
+
+Total width = 80px (width) + 10px (left padding + right padding) + 4px (left border + right border) + 0px (left margin + right margin) 
+= 94px.
+
+The total height for the element can be calculated as:
+
+Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+
+The <p> element can have a total height of 84px.
+
+Total height = 70px (height) + 10px (top padding + bottom padding) + 4px (top border + bottom border) + 0px (top margin + bottom margin) 
+= 84px.
+-->

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;   /* allow wrapping */
+  gap: 20px;         /* add space between boxes */
+  height: 100vh;
+}
+
+.sun{
+    height: 200px;
+    width: 200px;
+    background-color:yellow;
+   border-radius: 50%;
+   box-shadow: 0px 0px 10px 20px yellowgreen;
+
+
+}

@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  flex: 1 1 300px; /*    each card will try to take min 300px  */
+
+  background: lightblue;
+  padding: 20px;
+  text-align: center;
+}

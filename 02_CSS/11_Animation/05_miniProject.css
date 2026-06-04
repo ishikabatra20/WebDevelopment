@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: green;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 40px;
+}
+
+/* Animate the whole block */
+.scrolling {
+    display: block;         /* keep block layout */
+    animation: moving 10s linear infinite;
+}
+
+/* Keep h1 and p on separate lines */
+.scrolling h1,
+.scrolling p {
+    display: block;
+    white-space: nowrap;    /* prevent text from wrapping */
+}
+
+/* Margin-left animation for horizontal scroll */
+@keyframes moving {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: -100%;
+    }
+}

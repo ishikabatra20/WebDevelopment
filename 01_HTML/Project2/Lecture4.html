@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lecture 4 — Tables & Forms</title>
+</head>
+<body>
+  <header>
+    <h1>Lecture 4</h1>
+    <h2>Tables, Forms & Input Elements</h2>
+  </header>
+
+  <nav>
+    <a href="index.html">◀ Index</a> |
+    <a href="lecture3.html">◀ Prev</a> |
+    <a href="lecture5.html">Next ▶</a>
+  </nav>
+
+  <article>
+    <h3>Tables</h3>
+    <p>Use tables for tabular data only.</p>
+    <pre>&lt;table&gt;
+  &lt;caption&gt;Student scores&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Score&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Priya&lt;/td&gt;&lt;td&gt;95&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+
+    <h3>Forms</h3>
+    <p>Collect user data with <code>&lt;form&gt;</code> and input controls.</p>
+    <pre>&lt;form action="/submit" method="post"&gt;
+  &lt;label&gt;Name: &lt;input type="text" name="name"&gt;&lt;/label&gt;&lt;br&gt;
+  &lt;label&gt;Email: &lt;input type="email" name="email"&gt;&lt;/label&gt;&lt;br&gt;
+  &lt;label&gt;About: &lt;textarea name="about" rows="4" cols="40"&gt;&lt;/textarea&gt;&lt;/label&gt;&lt;br&gt;
+  &lt;input type="submit" value="Send"&gt;
+&lt;/form&gt;
+</pre>
+
+    <h3>Input Types to Know</h3>
+    <ul>
+      <li><code>text, email, password, number, date, checkbox, radio, file, submit</code></li>
+      <li><code>textarea</code> and <code>select</code> for longer input and choices.</li>
+    </ul>
+
+    <h3>Practice Tasks</h3>
+    <ol>
+      <li>Create a contact form with name, email, message and a select menu for "topic".</li>
+      <li>Create a small table of 3 rows and 2 columns with a caption.</li>
+    </ol>
+  </article>
+
+  <footer>
+    <p>Back to <a href="index.html">Index</a>.</p>
+  </footer>
+</body>
+</html>

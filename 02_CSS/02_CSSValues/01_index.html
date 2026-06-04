@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Values</title>
+  </head>
+
+<!-- A pixel does not have a fixed physical size.
+
+On paper (printing), 1 pixel is often treated as 1/72 or 1/96 of an inch by convention, but on screens it’s relative to resolution and display size. -->
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 20px;
+    }
+    .container {
+      font-size: 10px;
+      background-color: beige;
+      width: 50%;
+    }
+    /* 
+    4. %:- 
+
+    Using 50% of width in container means it will take 50% space of the whole page.
+    But 50% in pxvalue means it will take 50% of the container's width.
+
+        
+    */
+    .pxvalue {
+      font-size: 20px;
+      background-color: aquamarine;
+      width: 50%;
+    }
+
+    /* 
+
+    1. pixel (px)-
+
+    Case1: 
+    
+    .container {
+      font-size: 50px;
+    }
+    .pxvalue {
+      
+    }
+    
+    When there is no font-size mentioned in pxvalue class then it was automatically getting css of container class. In inspect the values 
+    were like these-
+    .container {
+    font-size: 50px;
+    }
+
+    .pxvalue{
+    }
+
+    Case 2: 
+    .container {
+      font-size: 50px;
+    }
+    .pxvalue {
+      font-size: 20px;
+    }
+
+    now, it's taking css of pxvalue only and in inspect it was visualise as a strikethrough on container class font-size and pxvalue
+    font-size is considerable in this case.   
+    */
+
+    .emvalue {
+      font-size: 1.5em;
+      background-color: rgb(127, 225, 255);
+      width: 25%;
+    }
+
+    /* 
+    2. em-
+
+    The em value is a unit of measurement that is relative to the font size of the parent element. For example, 
+    if the font size of a parent element is 10 pixels, then 3em would be equal to 30 pixels. 
+    if the font size of a parent element is 10 pixels, then 1.5em would be equal to 15 pixels. 
+    */
+
+    .remValue {
+      font-size: 2rem;
+      background-color: rgb(255, 246, 127);
+      width: 100%;
+      /* width: 100vw;                               100% will take the complete width of container not of window
+          So, vw is used to take the width of whole window.
+      */
+    }
+
+    /* 
+    5. vw:-
+
+    vw: The vw value is a unit of measurement that represents a percentage of the viewport width. For example, 
+    50vw would be 50% of the viewport width
+    */
+
+    /* 
+    3. rem-
+
+
+    The rem value is similar to the em value, but it is relative to the root element (i.e., the html element). 
+    
+    So, here if i don't mention the html tag i.e., root element font size even if 
+
+    .remValue{
+        font-size: 2rem;
+    }
+    this is mention 
+
+    it won't change it's size. Even if i change container's font-size value that won't affect this. So , do mention 
+    html and remValue's values then only it will work.
+    TO make rem work we need to mntn html
+    
+    */
+
+    /* 
+
+    6. ch:-
+    ch: The ch value is a unit of measurement that represents the width of the "0" character in the font used for the element. 
+    */
+
+    .widthch{
+      width: 20ch;
+      font-size: 15px;
+    }
+  </style>
+
+
+
+
+<!-- 
+/* 
+**Common Units for font-size:**
+
+- px (Pixels): An absolute, fixed-size unit. font-size: 16px; means the text will be exactly 16 pixels tall. Good for consistency, but less flexible for users who want to change their browser's default font size.
+- em: A relative unit. 1em is equal to the font size of the **parent element**. If a parent <div> has a font-size of 16px, then font-size: 2em; on a child <p> will make it 32px (16 * 2).
+- rem (Root Em): **The modern standard.** This is the most flexible and recommended unit. 1rem is equal to the font size of the **root <html> element**. This allows you to set a base font size on the <html> tag, and then all your other font sizes can be relative to that one single value, making it incredibly easy to scale your entire site's typography.
+*/ -->
+  <body>
+    <div class="container">
+      <p class="pxvalue">This is px paragraph.</p>
+      <p class="emvalue">This is em paragraph.</p>
+      <p class="remValue">This is rem paragraph.</p>
+      <br>
+      <p class="widthch">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quis dolorum similique repudiandae labore? Quasi deleniti debitis asperiores vel eaque exercitationem quo temporibus consequatur a, odio iusto adipisci! Similique, itaque!</p>
+    </div>
+  </body>
+</html>

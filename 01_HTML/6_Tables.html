@@ -1,0 +1,185 @@
+<!-- 
+The <table> tag in HTML is used to create an HTML table with rows and columns. 
+It is a container tag that holds other HTML elements such as <tr> (table row), <th> (table header), <td> (table data/cell), etc. 
+The table element can be used to create simple tables for displaying tabular data or more complex tables with multiple rows and columns, 
+headers, footers, etc. Tables are commonly used to display data such as financial information, schedules, timetables, etc.
+
+Basic Terminologies :
+
+1. <tr>: This tag represents a row in a table. It is used within a <tbody>, <thead>, or <tfoot> element, and contains one or more <th> 
+or <td> elements that represent the cells in the row.
+
+2. <th>: This tag represents a header cell in a table. It is used within a <tr> element in the <thead> or <tfoot> section, 
+and is typically used to provide labels or titles for columns or rows in the table.
+
+3. <td>: This tag represents a data cell in a table. It is used within a <tr> element in the <tbody> section, 
+and is used to display the actual data in the table.
+
+4. <thead>: This tag is used to group the header content in a table. It is typically used within a <table> element and contains 
+one or more <tr> (table row) elements that represent the header row(s) of the table.
+
+5. <tbody>: This tag is used to group the body content in a table. It is typically used within a <table> element and contains 
+one or more <tr> (table row) elements that represent the data rows of the table.
+
+6. <tfoot>: This tag is used to group the footer content in a table. It is typically used within a <table> element and contains 
+one or more <tr> (table row) elements that represent the footer row(s) of the table.
+
+7. <caption>: This tag is used to provide a caption or title for a table. It is typically used within a <table> element 
+and is used to describe the purpose or content of the table.
+
+8. rowspan: It is an attribute used in <td> or <th> elements within a table to specify the number of rows a cell should span vertically. 
+It allows a cell to occupy multiple rows in a table. The value of rowspan indicates the number of rows the cell should span.
+
+9. colspan: It is an attribute used in <td> or <th> elements within a table to specify the number of columns a cell should span horizontally.
+It allows a cell to occupy multiple columns in a table. The value of colspan indicates the number of columns the cell should span.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <style>
+        table{
+            height: 100%;
+            width: 100%;
+            border-collapse: collapse;
+
+        }
+        th{
+            border: 1px solid cadetblue;
+            font-size: 20px;
+        }
+        td{
+            text-align: center;
+            border: 1px solid cadetblue;
+            font-size: 15px;
+
+        }
+
+        table#table2 thead{
+            background-color: antiquewhite;
+        }
+        table#table2 tbody tr:nth-child(even){
+            background-color: beige;
+
+
+        }
+        table#table2 tbody tr:nth-child(odd){
+            color: brown;
+        }
+        table#table2 thead th{
+            border: 1px solid rosybrown;
+        }
+        table#table2 tbody td{
+            border: 1px solid rosybrown;
+        }
+    </style>
+    <table>
+        <thead>
+            <tr>
+                <th>Age</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>23</td>
+                <td>John</td>
+                <td>Doe</td>
+                
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>John</td>
+                <td>Doe</td>
+                
+            </tr>
+            <tr>
+                <td rowspan="2">20</td>
+                <td colspan="2">John</td>
+                <!-- <td>Doe</td> -->
+                
+            </tr>
+            <tr>
+                <!-- <td>20</td> -->
+                <td>John</td>
+                <td>Doe</td>
+                
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Table footer</td>
+            </tr>
+                
+        </tfoot>
+        <caption>My Table</caption>
+        <!-- Caption will always be shown at the top of the table no matter where you write it. -->
+       
+    </table>
+
+    <p>
+    </p>
+    <p>
+    </p>
+
+    <table id="table2">
+       <p><caption>Table 2</caption></p> 
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+</body>
+</html>

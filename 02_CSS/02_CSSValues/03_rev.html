@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Units Example</title>
+
+  <!-- 
+  📌 CSS Units
+
+px (pixels) → Absolute unit. Fixed size on screen (doesn’t scale with parent or viewport).
+
+vw (viewport width) → Relative to the browser window’s width. 1vw = 1% of viewport width.
+
+rem (root em) → Relative to the root element’s font-size (<html>).
+
+em → Relative to the parent element’s font-size.
+
+vh → Relative to viewport height. 1vh = 1% of viewport height.
+
+% → Relative to parent element’s size (width/height/font-size depending on the property).
+
+
+  -->
+  <style>
+    html {
+      font-size: 16px; /* Root font size */
+    }
+
+    .px-example {
+      font-size: 20px; /* Fixed: always 20px */
+    }
+
+    .vw-example {
+      font-size: 10vw; /* 10% of viewport width */
+    }
+
+    .vh-example {
+      font-size: 10vh; /* 10% of viewport height */
+    }
+
+    .rem-example {
+      font-size: 2rem; /* 2 × root font-size = 32px */
+    }
+
+    .parent {
+      font-size: 20px; /* Parent sets base size */
+      width: 400px;
+      border: 1px solid black;
+    }
+
+    .em-example {
+      font-size: 2em; /* 2 × parent (20px) = 40px */
+    }
+
+    .percent-example {
+      width: 50%; /* 50% of parent’s width (400px) = 200px */
+      background: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <p class="px-example">This is 20px (fixed).</p>
+  <p class="vw-example">This is 10vw (relative to viewport width).</p>
+  <p class="vh-example">This is 10vh (relative to viewport height).</p>
+  <p class="rem-example">This is 2rem (relative to root).</p>
+
+  <div class="parent">
+    <p class="em-example">This is 2em (relative to parent).</p>
+    <div class="percent-example">This box is 50% width of parent.</div>
+  </div>
+</body>
+</html>
+
+<!-- 
+px → Always the same size (absolute).
+
+vw → Changes with browser width.
+
+vh → Changes with browser height.
+
+rem → Based on root font-size (html { font-size }).
+
+em → Based on parent font-size.
+
+% → Based on parent’s size (for width/height) or parent’s font-size (for text).
+-->
+

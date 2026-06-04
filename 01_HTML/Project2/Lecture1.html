@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 1 — How the Internet Works</title>
+</head>
+<body>
+  <header>
+    <h1>Lecture 1</h1>
+    <h2>How the Internet Works (Concise Notes)</h2>
+  </header>
+
+<nav>
+  <a href="index.html">◀ Back</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="lecture2.html">Next ▶</a>
+</nav>
+
+
+  <article>
+    <h3>Principles (Short)</h3>
+    <ol>
+      <li><strong>Need to share information:</strong> connect two computers with a link (electrical/light signals).</li>
+      <li><strong>Scale problem:</strong> use a switch for many devices (local network).</li>
+      <li><strong>Connecting networks:</strong> use routers to connect different local networks.</li>
+      <li><strong>Addressing:</strong> IP addresses uniquely identify devices.</li>
+      <li><strong>Reliability:</strong> break data into packets and use protocols (TCP/IP).</li>
+    </ol>
+
+    <h3>Important Terms</h3>
+    <dl>
+      <dt>IP Address (IPv4)</dt>
+      <dd>32-bit address shown as four decimals (e.g., 172.217.16.142). Limit ≈ 4.3 billion addresses.</dd>
+
+      <dt>Public IP</dt>
+      <dd>Globally unique address assigned by ISP; your router usually has one.</dd>
+
+      <dt>Private IP</dt>
+      <dd>Used inside local network (e.g., 192.168.x.x). Only unique inside that network.</dd>
+
+      <dt>IPv6</dt>
+      <dd>128-bit addressing (hexadecimal groups) created to solve IPv4 exhaustion.</dd>
+
+      <dt>MAC Address</dt>
+      <dd>Hardware-level 48-bit identifier for network interfaces (e.g., 3C:22:FB:A3:B4:C5).</dd>
+
+      <dt>Port Number</dt>
+      <dd>16-bit number (0–65535) that identifies services on a host (HTTP:80, HTTPS:443).</dd>
+
+      <dt>DNS</dt>
+      <dd>Translates domain names to IP addresses (root → TLD → authoritative server → result).</dd>
+    </dl>
+
+    <h3>Quick Examples / Commands</h3>
+    <p>Windows: <code>ipconfig /all</code> or <code>getmac /v</code></p>
+    <p>macOS / Linux: <code>ifconfig</code></p>
+
+    <h3>Summary</h3>
+    <p>The internet is a network of networks. Routers move packets using IP addresses. DNS maps human names to IPs. Use these fundamentals as mental anchors.</p>
+  </article>
+
+  <footer>
+    <p>Back to <a href="index.html">Home</a>.</p>
+  </footer>
+</body>
+</html>

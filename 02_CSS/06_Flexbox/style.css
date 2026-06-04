@@ -1,0 +1,39 @@
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: row; /* by default it's row*/
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10;
+}
+
+/* justify content: main axis ke around kaam karta hai
+main axis decide kun karega, aapka flex direction */
+/* align items work around cross axis */
+.box {
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+}
+
+.first {
+  background-color: aqua;
+  /* flex-grow: 1; */
+  flex-basis: 200px;  /*over ride the width when flex-direction: row; and if flex-direction: coln; then height will increase*/
+}
+
+.second {
+  background-color: aquamarine;
+  /* flex-shrink: 2; */
+}
+
+.third {
+  background-color: yellowgreen;
+  align-self: flex-start;
+}
+
+.fourth {
+  background-color: steelblue;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates</title>
+</head>
+<body>
+    <template id="temp">
+        <div>
+            <h1>Parent</h1>
+            <p>This is parent container</p>
+        </div>
+    </template>
+    
+</body>
+
+<script>
+    var template = document.getElementById('temp');
+    console.log(template);
+
+    var children = document.importNode(template.content, true) 
+    console.log(children);
+    children.querySelector('h1').textContent = 'Children'
+    children.querySelector('p').textContent = 'Children Description'
+
+    var children2 = document.importNode(template.content, true) 
+    console.log(children2);
+    children2.querySelector('h1').textContent = 'Children2'
+
+     document.body.appendChild(children);
+     document.body.appendChild(children2);
+
+    
+</script>
+</html>

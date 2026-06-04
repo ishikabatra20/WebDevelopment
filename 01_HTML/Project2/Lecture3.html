@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lecture 3 — Text, Lists, Links, Images</title>
+</head>
+<body>
+  <header>
+    <h1>Lecture 3</h1>
+    <h2>Text formatting, Lists, Links & Images</h2>
+  </header>
+
+  <nav>
+    <a href="index.html">◀ Index</a> |
+    <a href="lecture2.html">◀ Prev</a> |
+    <a href="lecture4.html">Next ▶</a>
+  </nav>
+
+  <article>
+    <h3>Text & Inline Tags</h3>
+    <ul>
+      <li><code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> for emphasis.</li>
+      <li><code>&lt;code&gt;</code> for code fragments, <code>&lt;small&gt;</code> for fine print, <code>&lt;mark&gt;</code> to highlight.</li>
+    </ul>
+
+    <h3>Lists</h3>
+    <p>Ordered list:</p>
+    <pre>&lt;ol&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+    <p>Unordered list:</p>
+    <pre>&lt;ul&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+    <h3>Links & Anchors</h3>
+    <p>Use <code>&lt;a href="..."&gt;link text&lt;/a&gt;</code>. For internal anchors use <code>id</code>.</p>
+    <pre>&lt;a href="https://example.com"&gt;Visit example&lt;/a&gt;
+&lt;a href="#summary"&gt;Jump to summary&lt;/a&gt;
+
+&lt;h4 id="summary"&gt;Summary&lt;/h4&gt;</pre>
+
+    <h3>Images</h3>
+    <p>Always include <code>alt</code> for accessibility.</p>
+    <pre>&lt;img src="image.png" alt="Description of image"&gt;</pre>
+
+    <h3>Practice Tasks</h3>
+    <ol>
+      <li>Create a page with an ordered list and an internal anchor.</li>
+      <li>Add two images with descriptive <code>alt</code> text.</li>
+    </ol>
+  </article>
+
+  <footer>
+    <p>Back to <a href="index.html">Index</a>.</p>
+  </footer>
+</body>
+</html>
