@@ -45,7 +45,7 @@ console.log(""==null);//f
 console.log(" "==undefined);//f
 
 
-//
+//logical operators
 console.log(true&&true);
 console.log(true&&false);
 console.log(false&&true);
@@ -59,6 +59,37 @@ console.log(false||true);
 console.log(false||false);
 console.log(true||"ABCD");//true
 console.log(false||"ABCD");//abcd
+
+
+
+let a = 16;
+let b = 3;
+
+console.log(8>>2);
+
+//Blockchain: Finannc, zomato, swiggy, payment gateway
+
+console.log(0.1+0.2);
+
+//financial term: Database: Decimal mein store
+
+//INR: 
+
+//Rupess: store in paise unit
+let first = 12001
+let second = 13002
+
+// Bank balance: Paise hai
+
+let finalBalance = first+second;
+console.log(finalBalance/100);
+
+// 1Btc = 10^8 sats
+let curr = 100000000;
+
+console.log(parseInt("100px"));
+console.log(parseFloat("100.01px"))
+// NaN: Not a number
 
 
 
