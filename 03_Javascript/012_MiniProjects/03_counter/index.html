@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter Project</title>
+  </head>
+  <body
+    style="
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #121212;
+      font-family: Arial, sans-serif;
+    "
+  >
+    <div
+      id="root"
+      style="
+        background-color: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        min-width: 300px;
+      "
+    >
+      <h1 style="margin: 0; color: #333">Counter: 0</h1>
+
+      <div style="display: flex; gap: 15px">
+        <button id="btn1"
+          style="
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            background-color: #22c55e;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+          "
+        >
+          Increment
+        </button>
+
+        <button id="btn2"
+          style="
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ef4444;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+          "
+        >
+          Decrement
+        </button>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
