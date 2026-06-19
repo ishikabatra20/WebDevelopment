@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<body style="
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#1e1e1e;
+    margin:0;
+">
+    
+    <h1 style="
+        color:white;
+        font-size:4rem;
+        font-family:Arial, sans-serif;
+        background:#333;
+        padding:20px 40px;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(255,255,255,0.2);
+    ">
+        10:12:06
+    </h1>
+
+    <script>
+        const h1 = document.querySelector("h1");
+
+        // setInterval() → Executes repeatedly after every specified time.
+        setInterval(() => {
+            let time = new Date();
+            h1.textContent = time.toLocaleTimeString();
+        }, 1000);
+
+        // setTimeout() → Executes only once after the specified time.
+        /*
+        setTimeout(() => {
+            let time = new Date();
+            h1.textContent = time.toLocaleTimeString();
+        }, 1000);
+        */
+    </script>
+
+</body>
+</html>

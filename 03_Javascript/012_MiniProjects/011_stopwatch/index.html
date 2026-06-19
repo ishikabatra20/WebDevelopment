@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#1e1e1e;
+            font-family:Arial, sans-serif;
+        }
+
+        .container{
+            text-align:center;
+        }
+
+        h1{
+            color:white;
+            margin-bottom:20px;
+        }
+
+        .timer{
+            font-size:4rem;
+            color:white;
+            background:#333;
+            padding:20px 40px;
+            border-radius:10px;
+            margin-bottom:20px;
+            min-width:300px;
+        }
+
+        button{
+            padding:10px 20px;
+            margin:5px;
+            font-size:1rem;
+            cursor:pointer;
+            border:none;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Stopwatch</h1>
+
+        <div class="timer">
+            00:00:00
+        </div>
+
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+    </div>
+
+    <script>
+        const timer = document.querySelector(".timer");
+        const startBtn = document.getElementById("start");
+        const stopBtn = document.getElementById("stop");
+        const resetBtn = document.getElementById("reset");
+
+        let seconds = 0;
+        let intervalId = null;
+
+        function updateDisplay() {
+            const hrs = String(Math.floor(seconds / 3600)).padStart(2, "0");
+            const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, "0");
+            const secs = String(seconds % 60).padStart(2, "0");
+
+            timer.textContent = `${hrs}:${mins}:${secs}`;
+        }
+
+        startBtn.addEventListener("click", () => {
+            if (intervalId !== null) return;
+
+            intervalId = setInterval(() => {
+                seconds++;
+                updateDisplay();
+            }, 1000);
+        });
+
+        stopBtn.addEventListener("click", () => {
+            clearInterval(intervalId);
+            intervalId = null;
+        });
+
+        resetBtn.addEventListener("click", () => {
+            clearInterval(intervalId);
+            intervalId = null;
+            seconds = 0;
+            updateDisplay();
+        });
+    </script>
+
+</body>
+</html>
